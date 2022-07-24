@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { QuicklinkModule } from 'ngx-quicklink';
 
 const MaterialModules = [
   MatButtonModule,
@@ -25,6 +26,7 @@ const MaterialModules = [
     AppRoutingModule,
     BrowserAnimationsModule,
     ...MaterialModules,
+    QuicklinkModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
