@@ -7,15 +7,22 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    redirectTo: 'home',
+    pathMatch: 'full',
   },
   {
     path: 'about',
-    component: AboutComponent,
+    loadChildren: () =>
+      import('./about/about.module').then((m) => m.AboutModule),
   },
   {
     path: 'admin',
-    component: AdminComponent,
+    loadChildren: () =>
+      import('./admin/admin.module').then((m) => m.AdminModule),
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
 ];
 

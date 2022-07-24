@@ -6,6 +6,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
+import { AboutRoutingModule } from './about-routing.module';
 
 @NgModule({
   declarations: [AboutComponent],
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
     MatSliderModule,
     MatRadioModule,
     FormsModule,
+    AboutRoutingModule,
   ],
 })
 export class AboutModule {}

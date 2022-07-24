@@ -9,9 +9,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { HomeModule } from './home/home.module';
-import { AdminModule } from './admin/admin.module';
-import { AboutModule } from './about/about.module';
 
 const MaterialModules = [
   MatButtonModule,
@@ -28,9 +25,6 @@ const MaterialModules = [
     AppRoutingModule,
     BrowserAnimationsModule,
     ...MaterialModules,
-    HomeModule,
-    AdminModule,
-    AboutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
